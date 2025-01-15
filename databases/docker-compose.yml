@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  amazon-sales-db:
+    image: shandytp/amazon-sales-data-docker-db:latest
+    container_name: amazon-sales-data
+    restart: always
+    ports:
+      - "5433:5432"
